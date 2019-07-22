@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img {
+  animation: shake 10.5s;
+  animation-iteration-count: infinite;
+}
+
+.container{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: example 100s linear;
+}
+
+@keyframes example {
+  0%   {left:0px; top:0px;}
+  100%  {left:400px; top:0px;}
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) ; }
+  10% { transform: translate(-1px, -2px) ; }
+  20% { transform: translate(-3px, 0px) ; }
+  30% { transform: translate(3px, 2px) ; }
+  40% { transform: translate(1px, -1px) ; }
+  50% { transform: translate(-1px, 2px) ; }
+  60% { transform: translate(-3px, 1px) ; }
+  70% { transform: translate(3px, 1px) ; }
+  80% { transform: translate(-1px, -1px) ; }
+  90% { transform: translate(1px, 2px) ; }
+  100% { transform: translate(1px, -2px) ; }
+}
+</style>
+</head>
+<body>
+
+<p>Hover over the image:</p>
+<div class="container">
+<img src="https://abm-website-assets.s3.amazonaws.com/rdmag.com/s3fs-public/featured_image/2016/09/rd1609_snail.jpg" alt="Pineapple"  height="auto">
+</div>
+</body>
+</html>
