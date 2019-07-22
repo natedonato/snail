@@ -6,6 +6,7 @@
 img {
   animation: shake 10.5s;
   animation-iteration-count: infinite;
+  
 }
 
 .container{
@@ -13,12 +14,13 @@ img {
   height: 100px;
   position: relative;
   margin-left: -800px;
-  animation: example 100s linear;
+  animation: example 180s linear;
+  animation-fill-mode: forwards;
 }
 
 @keyframes example {
   0%   {left:0px; top:0px;}
-  100%  {left:400px; top:0px;}
+  100%  {left:1000px; top:0px;}
 }
 
 @keyframes shake {
